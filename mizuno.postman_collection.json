@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "f6f78039-93c5-4284-b5fb-b393fe4d1c27",
+		"name": "mizuno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "459258"
+	},
+	"item": [
+		{
+			"name": "getPricesByVendor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/prices/getPricesByVendor/mizuno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"getPricesByVendor",
+						"mizuno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrument",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/prices/getPricesByInstrument/PetrolStocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"getPricesByInstrument",
+						"PetrolStocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save prices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vendorName\" : \"mizuno\",\r\n    \"price\" : \"125\",\r\n    \"instrumentName\" : \"petrolStock7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/prices/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
